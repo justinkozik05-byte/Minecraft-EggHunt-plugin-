@@ -1,0 +1,17 @@
+name: DragonEggOwner
+version: 1.0.0
+main: de.eggowner.DragonEggOwner
+api-version: '26.1'
+description: Drachenei mit Eigentümer - nur per PvP übertragbar
+commands:
+  dragonegg:
+    description: Zeigt den Eigentümer des Drachenei (Admin: set/clear/give)
+    aliases: [egg, drachenei]
+    usage: /dragonegg [set <Spieler>|clear|give]
+permissions:
+  dragoneggowner.admin:
+    description: Eigentümer setzen/entfernen, Ei geben
+    default: op
+  dragoneggowner.bypass:
+    description: Darf das Ei trotz fremdem Eigentümer anfassen
+    default: false
